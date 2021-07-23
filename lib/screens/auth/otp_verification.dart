@@ -1,3 +1,4 @@
+import 'package:book_teacher/screens/auth/landing_screen.dart';
 import 'package:book_teacher/size_config.dart';
 import 'package:flutter/material.dart';
 
@@ -222,6 +223,36 @@ class _OtpVerificationState extends State<OtpVerification> {
                       style: TextStyle(
                           color: Colors.grey,
                           fontSize: getProportionateScreenHeight(16)),
+                    ),
+                  ),
+                  SizedBox(
+                    height: getProportionateScreenHeight(180),
+                  ),
+                  Center(
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushAndRemoveUntil(
+                            MaterialPageRoute(
+                                builder: (context) => LandingScreen()),
+                            (route) => false);
+                      },
+                      child: Container(
+                        width: SizeConfig.screenWidth * 0.6,
+                        decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(16))),
+                        alignment: Alignment.center,
+                        child: Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Text(
+                            "Proceed",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: getProportionateScreenHeight(22)),
+                          ),
+                        ),
+                      ),
                     ),
                   )
                 ],

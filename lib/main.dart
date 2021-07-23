@@ -1,3 +1,4 @@
+import 'package:book_teacher/routes.dart';
 import 'package:book_teacher/screens/wrapper.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
+      routes: routes,
+      initialRoute: "/wrapper",
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

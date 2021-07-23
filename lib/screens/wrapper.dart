@@ -3,6 +3,7 @@ import 'package:book_teacher/size_config.dart';
 import 'package:flutter/material.dart';
 
 class Wrapper extends StatelessWidget {
+  static String routeName = "/wrapper";
   const Wrapper({Key key}) : super(key: key);
 
   @override
